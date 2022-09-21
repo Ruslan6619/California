@@ -792,3 +792,47 @@ a{
 
 }
 }
+
+.owl-nav .owl-prev{
+  position: absolute;
+  left: 18px;
+  top: 50%;
+}
+
+.owl-nav .owl-prev:before{
+
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f053";
+  font-size: 25px;
+  color: black;
+}
+
+.owl-nav .owl-next{
+  position: absolute;
+  right: 18px;
+  top: 50%;
+}
+
+.owl-nav .owl-next:before{
+
+font-family: "Font Awesome 6 Free";
+font-weight: 900;
+content: "\f054";
+  font-size: 25px;
+  color: black;
+}
+
+
+.owl-dots{
+  text-align: center;
+  .owl-dot span{
+    background: #000000;
+    width: 197px;
+    height: 2px;
+    //display: inline-block;
+    margin-right: 34px;
+    position: absolute;
+    top: 90%;
+  }
+}
