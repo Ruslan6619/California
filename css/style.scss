@@ -1,3 +1,12 @@
+
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+
+
 * {
   padding: 0;
   margin: 0;
@@ -5,7 +14,9 @@
 
 header {
   padding: 30px 0;
-
+  @include max-screen(835px){
+    padding: 0;
+  }
 }
 
 .container {
@@ -27,6 +38,11 @@ header {
 
 header {
   nav {
+    @include max-screen(835px){
+      position: fixed;
+      display: none;
+    }
+
     ul {
       display: flex;
       list-style: none;
@@ -52,14 +68,30 @@ header {
   }
 }
 
+.logo{
+  @include max-screen(835px){
+    display: block;
+    margin: auto;
+  }
 
+  @include max-screen(391px){
+    margin-left: 95px;
+  }
+  @include max-screen(376px){
+    margin-left: 85px;
+  }
+  @include max-screen(321px){
+    display: none;
+  }
+}
 .icon-header {
   display: flex;
   align-items: center;
   list-style: none;
 
   li {
-    margin-left: 13px;
+      margin-right: 13px;
+
   }
 }
 
@@ -81,6 +113,15 @@ header {
 .phone{
   background: #DCE5E2;
   border-radius: 32px;
+  @include max-screen(835px){
+    flex-direction: column;
+    text-align: center;
+    border-radius: 0;
+  }
+    @include max-screen(429px){
+      border-radius: 0;
+    }
+
 }
 .the-new-phone{
   h1{
@@ -93,6 +134,13 @@ header {
     padding-top: 145px;
     padding-left: 56px;
     padding-bottom: 19px;
+    @include max-screen(429px){
+      font-size: 35px;
+      line-height: 45px;
+      padding-top: 65px;
+      padding-left: 0;
+    }
+
   }
   p{
 
@@ -104,6 +152,12 @@ header {
     color: #000000;
     padding-left: 56px;
     padding-bottom: 44px;
+    @include max-screen(429px){
+      padding-left: 0;
+    }
+    @include max-screen(391px){
+      padding-top: 20px;
+    }
   }
   a{
     text-decoration: none;
@@ -118,6 +172,9 @@ header {
     border-radius: 200px;
     padding: 14px 53px;
     margin-left: 56px;
+    @include max-screen(429px){
+      margin-left: 0;
+    }
   }
 }
 .shop{
@@ -138,6 +195,10 @@ header {
     text-align: center;
     color: #000000;
     padding-bottom: 9px;
+    @include max-screen(429px){
+      font-size: 25px;
+      line-height: 33px;
+    }
   }
   p{
     font-family: 'Readex Pro';
@@ -148,8 +209,20 @@ header {
     text-align: center;
     color: #000000;
     margin-bottom: 55px;
+    @include max-screen(376px){
+      font-size: 12px;
+      line-height: 15px;
+    }
   }
 }
+.solution{
+  @include max-screen(835px){
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
 .laptop{
   max-width: 639px;
   -webkit-box-shadow: 0 4px 35px 0 rgba(0,0,0,0.25);
@@ -161,6 +234,10 @@ header {
   border-radius: 32px;
   &:hover{
     bottom: -20px;
+  }
+  @include max-screen(429px){
+    width: 310px;
+    margin: auto;
   }
 
 
@@ -184,6 +261,12 @@ header {
     color: #000000;
     padding-right: 42px
   }
+  img{
+    @include max-screen(429px){
+      width: 250px;
+
+    }
+  }
 }
 .watch{
   max-width: 639px;
@@ -196,6 +279,11 @@ header {
   border-radius: 32px;
   &:hover{
     bottom: -20px;
+  }
+  @include max-screen(429px){
+    width: 310px;
+    display: block;
+    margin-top: 30px;
   }
   p{
     font-family: 'Inter';
@@ -215,6 +303,12 @@ header {
     text-align: right;
     color: #000000;
   }
+  img{
+    @include max-screen(429px){
+      width: 250px;
+    }
+  }
+
 }
 .watch-style{
   max-width: 174px;
@@ -225,6 +319,14 @@ header {
   bottom: 0;
   &:hover{
     bottom: -20px;
+  }
+}
+.phone-table{
+  @include max-screen(835px){
+    padding-top: 50px;
+  }
+  @include max-screen(429px){
+    display: block;
   }
 }
 .iphone{
@@ -240,6 +342,17 @@ header {
   border-radius: 32px;
   &:hover{
     bottom: -20px;
+  }
+  @include max-screen(429px){
+    margin-bottom: 30px;
+  }
+  @include max-screen(321px){
+    width: 200px;
+  }
+  img{
+    @include max-screen(321px){
+      width: 200px;
+    }
   }
   p{
     font-family: 'Inter';
@@ -275,6 +388,9 @@ header {
   &:hover{
     bottom: -20px;
   }
+  @include max-screen(321px){
+    width: 200px;
+  }
   p{
 
     font-family: 'Inter';
@@ -295,6 +411,11 @@ header {
     text-align: center;
     color: #000000;
   }
+  img{
+    @include max-screen(321px){
+      width: 200px;
+    }
+  }
 }
 .save-items{
   padding-bottom: 28px;
@@ -311,6 +432,10 @@ header {
     color: #000000;
     padding-bottom: 9px;
     padding-top: 19px;
+    @include max-screen(376px){
+      font-size: 27px;
+      line-height: 35px;
+    }
   }
   p{
     font-family: 'Readex Pro';
@@ -321,10 +446,23 @@ header {
     color: #000000;
     text-align: center;
     padding-bottom: 56px;
+    @include max-screen(835px){
+      padding-bottom: 10px;
+    }
+    @include max-screen(429px){
+      padding-left: 10px;
+    }
+    @include max-screen(376px){
+      font-size: 8px;
+    }
   }
 }
 
 .price{
+  @include max-screen(835px){
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .mac-book{
@@ -338,6 +476,9 @@ header {
     color: #000000;
     padding-top: 33px;
     padding-bottom: 9px;
+    @include max-screen(835px){
+      padding-top: 0;
+    }
   }
   p{
     font-family: 'Inter';
@@ -362,6 +503,9 @@ header {
   text-align: center;
 }
 .smart-watch{
+  @include max-screen(835px){
+    padding-top: 50px;
+  }
   h3{
     font-family: 'Readex Pro';
     font-style: normal;
@@ -392,6 +536,9 @@ header {
 }
 .description{
   max-width: 302px;
+  @include max-screen(835px){
+    padding-bottom: 50px;
+  }
 }
 .mac-book-air{
   h3{
@@ -403,6 +550,9 @@ header {
     color: #000000;
     padding-bottom: 9px;
     padding-top: 33px;
+    @include max-screen(835px){
+      padding-top: 0;
+    }
   }
   p{
     font-family: 'Inter';
@@ -453,6 +603,12 @@ header {
     color: #000000;
   }
 }
+.box-product{
+  @include max-screen(835px){
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .best-around{
   padding-bottom: 28px;
 }
@@ -468,6 +624,14 @@ header {
     color: #000000;
     padding-top: 19px;
     padding-bottom: 9px;
+    @include max-screen(429px){
+      font-size: 36px;
+      line-height: 44px;
+    }
+    @include max-screen(376px){
+      font-size: 22px;
+      line-height: 38px;
+    }
   }
   p{
     font-family: 'Readex Pro';
@@ -477,6 +641,9 @@ header {
     line-height: 17px;
     color: #000000;
     text-align: center;
+    @include max-screen(429px){
+      padding-left: 32px;
+    }
   }
 }
 .gratest{
@@ -484,6 +651,12 @@ header {
   background: #F8F9FA;
   border-radius: 16px;
   text-align: center;
+  @include max-screen(835px){
+    margin-bottom: 30px;
+  }
+  @include max-screen(321px){
+    width: 300px;
+  }
   p{
     font-family: 'Readex Pro';
     font-style: normal;
@@ -518,6 +691,7 @@ header {
   }
   img{
     padding-top: 30px;
+    width: 300px;
   }
 }
 .box-ideas{
@@ -532,6 +706,14 @@ header {
     text-align: center;
     color: #000000;
     padding-bottom: 9px;
+    @include max-screen(429px){
+      font-size: 38px;
+      line-height: 42px;
+    }
+    @include max-screen(376px){
+      font-size: 24px;
+      line-height: 37px;
+    }
   }
   p{
     font-family: 'Readex Pro';
@@ -545,6 +727,18 @@ header {
 }
 .img{
   max-width: 620px;
+  img{
+    @include max-screen(429px){
+      width: 320px;
+    }
+  }
+
+}
+.box-design{
+  @include max-screen(835px){
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .design{
   max-width: 639px;
@@ -557,6 +751,14 @@ header {
     line-height: 30px;
     color: #000000;
     padding-left: 23px;
+    @include max-screen(429px){
+      font-size: 18px;
+      line-height: 19px;
+    }
+    @include max-screen(321px){
+      font-size: 13px;
+      line-height: 15px;
+    }
   }
 }
 
@@ -565,6 +767,9 @@ header {
   margin: auto;
   padding-top: 74px;
   padding-bottom: 24px;
+  @include max-screen(376px){
+    padding-top: 25px;
+  }
   a{
     font-family: 'Inter';
     font-style: normal;
@@ -595,6 +800,14 @@ header {
     line-height: 52px;
     text-align: center;
     color: #000000;
+    @include max-screen(429px){
+      font-size: 35px;
+      line-height: 45px;
+    }
+    @include max-screen(376px){
+      font-size: 19px;
+      line-height: 30px;
+    }
   }
 }
 .search{
@@ -603,6 +816,9 @@ header {
   padding-top: 14px;
   position: relative;
   padding-bottom: 18px;
+  @include max-screen(429px){
+    margin-left: 40px;
+  }
   input{
     background: #F8F9FA;
     border: 1px solid #C5C5C5;
@@ -622,7 +838,18 @@ header {
     &::-webkit-search-cancel-button{
       display: none;
     }
-
+    @include max-screen(429px){
+      width: 350px;
+    }
+    @include max-screen(391px){
+      width:310px;
+    }
+    @include max-screen(376px){
+      width:290px;
+    }
+    @include max-screen(321px){
+      width: 250px;
+    }
   }
   button{
     border: 0;
@@ -704,6 +931,10 @@ header {
       line-height: 17px;
       color: #000000;
     }
+    @include max-screen(376px){
+      width: 190px;
+      margin-left: 17px;
+    }
   }
   button{
     background: #000000;
@@ -716,16 +947,29 @@ header {
     line-height: 17px;
     text-align: center;
     color: #FFFFFF;
+    @include max-screen(429px){
+      padding: 16px 22px;
+    }
   }
+
 }
 footer{
   background: #F8F9FA;
   .box-footer{
     padding-bottom: 80px;
+    @include max-screen(835px){
+      flex-direction: column;
+    }
   }
   .logo-footer{
     width: 394px;
     padding-top: 43px;
+    @include max-screen(835px){
+      margin: auto;
+    }
+    @include max-screen(391px){
+      width: auto;
+    }
     p{
       padding-top: 18px;
     }
@@ -734,6 +978,9 @@ footer{
 .products{
   list-style: none;
   padding-top: 45px;
+  @include max-screen(835px){
+    padding-left: 20px;
+  }
 
      li{
        padding-bottom: 15px;
@@ -764,6 +1011,11 @@ footer{
   border-top: solid #DCE5E2;
   padding-top: 52px;
 }
+.made-by{
+  @include max-screen(391px){
+    display: block;
+  }
+}
 .made{
 
   a{
@@ -777,7 +1029,11 @@ footer{
 
   }
 }
-
+.powered{
+  @include max-screen(391px){
+    display: block;
+  }
+}
 .azvedo{
   display: flex;
 
@@ -826,12 +1082,180 @@ content: "\f054";
 
 .owl-dots{
   position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 20px;
+}
   .owl-dot span{
     background: #000000;
     width: 197px;
     height: 2px;
     margin-right: 34px;
-    top: 90%;
     display: flex;
+    @include max-screen(429px){
+      width: 80px;
+      margin-right: 20px;
+    }
+  }
+.owl-dot.active {
+  opacity: 0.3;
+}
+.owl-carousel .owl-item img {
+  width: auto;
+  @include max-screen(429px){
+    width: 100%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Colors
+$color-one: #34495E;
+$color-two: #ECF0F1;
+$color-three: #C0392D;
+$color-four: #2980D9;
+
+
+//* {
+//  box-sizing: border-box;
+//}
+
+body {
+  font-size: 16px;
+}
+
+#menu {
+  background:gray;
+  width: 100vw;
+  height: auto;
+  padding: 50px 0;
+  color: $color-two;
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 3px;
+  transition: all 300ms ease-in-out;
+  position: fixed;
+  top: -100vh;
+  left: 0px;
+  z-index: 9;
+  &.active {
+    top: 0;
+  }
+  #logo {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    li {
+      margin: 10px 0;
+    }
+  }
+}
+
+#toggle {
+  position: relative;
+  width: 40px;
+  height: 36px;
+  left: 20px;
+  top: 35px;
+  transition: all 300ms ease-in-out;
+  z-index: 10;
+  display: none;
+  @include max-screen(835px){
+    display: block;
+  }
+  input {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+    &:checked {
+      + span {
+        background: transparent;
+        left: 0;
+        &:after {
+          transform: rotate(45deg) translate(-1px, -12px);
+          left: -7px;
+          background: #fff;
+        }
+        &:before {
+          transform: rotate(-45deg) translate(-4px, 16px);
+          left: -7px;
+          background: #fff;
+        }
+      }
+    }
+  }
+  span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: $color-one;
+    margin-top: 10px;
+    transition: all 0.1s;
+    left: 0;
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: $color-one;
+      top: -12px;
+      left: 0;
+      transition: all 0.3s;
+    }
+    &:after {
+      top: 12px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

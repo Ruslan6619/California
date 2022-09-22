@@ -4,6 +4,9 @@
 
 header {
   padding: 30px 0; }
+  @media screen and (max-width: 835px) {
+    header {
+      padding: 0; } }
 
 .container {
   max-width: 1300px;
@@ -18,6 +21,10 @@ header {
 .align-items {
   align-items: center; }
 
+@media screen and (max-width: 835px) {
+  header nav {
+    position: fixed;
+    display: none; } }
 header nav ul {
   display: flex;
   list-style: none; }
@@ -35,12 +42,26 @@ header nav ul {
       color: #000000;
       text-decoration: none; }
 
+@media screen and (max-width: 835px) {
+  .logo {
+    display: block;
+    margin: auto; } }
+@media screen and (max-width: 391px) {
+  .logo {
+    margin-left: 95px; } }
+@media screen and (max-width: 376px) {
+  .logo {
+    margin-left: 85px; } }
+@media screen and (max-width: 321px) {
+  .logo {
+    display: none; } }
+
 .icon-header {
   display: flex;
   align-items: center;
   list-style: none; }
   .icon-header li {
-    margin-left: 13px; }
+    margin-right: 13px; }
 
 .navigation nav ul li img {
   margin-left: 3px; }
@@ -51,6 +72,14 @@ header nav ul {
 .phone {
   background: #DCE5E2;
   border-radius: 32px; }
+  @media screen and (max-width: 835px) {
+    .phone {
+      flex-direction: column;
+      text-align: center;
+      border-radius: 0; } }
+  @media screen and (max-width: 429px) {
+    .phone {
+      border-radius: 0; } }
 
 .the-new-phone h1 {
   font-family: 'Readex Pro';
@@ -62,6 +91,12 @@ header nav ul {
   padding-top: 145px;
   padding-left: 56px;
   padding-bottom: 19px; }
+  @media screen and (max-width: 429px) {
+    .the-new-phone h1 {
+      font-size: 35px;
+      line-height: 45px;
+      padding-top: 65px;
+      padding-left: 0; } }
 .the-new-phone p {
   font-family: 'Inter';
   font-style: normal;
@@ -71,6 +106,12 @@ header nav ul {
   color: #000000;
   padding-left: 56px;
   padding-bottom: 44px; }
+  @media screen and (max-width: 429px) {
+    .the-new-phone p {
+      padding-left: 0; } }
+  @media screen and (max-width: 391px) {
+    .the-new-phone p {
+      padding-top: 20px; } }
 .the-new-phone a {
   text-decoration: none;
   font-family: 'Inter';
@@ -84,6 +125,9 @@ header nav ul {
   border-radius: 200px;
   padding: 14px 53px;
   margin-left: 56px; }
+  @media screen and (max-width: 429px) {
+    .the-new-phone a {
+      margin-left: 0; } }
 
 .shop {
   padding-bottom: 28px; }
@@ -101,6 +145,10 @@ header nav ul {
     text-align: center;
     color: #000000;
     padding-bottom: 9px; }
+    @media screen and (max-width: 429px) {
+      .categories h3 {
+        font-size: 25px;
+        line-height: 33px; } }
   .categories p {
     font-family: 'Readex Pro';
     font-style: normal;
@@ -110,6 +158,15 @@ header nav ul {
     text-align: center;
     color: #000000;
     margin-bottom: 55px; }
+    @media screen and (max-width: 376px) {
+      .categories p {
+        font-size: 12px;
+        line-height: 15px; } }
+
+@media screen and (max-width: 835px) {
+  .solution {
+    flex-direction: column;
+    align-items: center; } }
 
 .laptop {
   max-width: 639px;
@@ -122,6 +179,10 @@ header nav ul {
   border-radius: 32px; }
   .laptop:hover {
     bottom: -20px; }
+  @media screen and (max-width: 429px) {
+    .laptop {
+      width: 310px;
+      margin: auto; } }
   .laptop p {
     font-family: 'Inter';
     font-style: normal;
@@ -140,6 +201,9 @@ header nav ul {
     text-align: right;
     color: #000000;
     padding-right: 42px; }
+  @media screen and (max-width: 429px) {
+    .laptop img {
+      width: 250px; } }
 
 .watch {
   max-width: 639px;
@@ -152,6 +216,11 @@ header nav ul {
   border-radius: 32px; }
   .watch:hover {
     bottom: -20px; }
+  @media screen and (max-width: 429px) {
+    .watch {
+      width: 310px;
+      display: block;
+      margin-top: 30px; } }
   .watch p {
     font-family: 'Inter';
     font-style: normal;
@@ -168,6 +237,9 @@ header nav ul {
     line-height: 38px;
     text-align: right;
     color: #000000; }
+  @media screen and (max-width: 429px) {
+    .watch img {
+      width: 250px; } }
 
 .watch-style {
   max-width: 174px;
@@ -178,6 +250,13 @@ header nav ul {
   bottom: 0; }
   .watch-style:hover {
     bottom: -20px; }
+
+@media screen and (max-width: 835px) {
+  .phone-table {
+    padding-top: 50px; } }
+@media screen and (max-width: 429px) {
+  .phone-table {
+    display: block; } }
 
 .iphone {
   max-width: 312px;
@@ -192,6 +271,15 @@ header nav ul {
   border-radius: 32px; }
   .iphone:hover {
     bottom: -20px; }
+  @media screen and (max-width: 429px) {
+    .iphone {
+      margin-bottom: 30px; } }
+  @media screen and (max-width: 321px) {
+    .iphone {
+      width: 200px; } }
+  @media screen and (max-width: 321px) {
+    .iphone img {
+      width: 200px; } }
   .iphone p {
     font-family: 'Inter';
     font-style: normal;
@@ -221,6 +309,9 @@ header nav ul {
   border-radius: 32px; }
   .table:hover {
     bottom: -20px; }
+  @media screen and (max-width: 321px) {
+    .table {
+      width: 200px; } }
   .table p {
     font-family: 'Inter';
     font-style: normal;
@@ -238,6 +329,9 @@ header nav ul {
     line-height: 38px;
     text-align: center;
     color: #000000; }
+  @media screen and (max-width: 321px) {
+    .table img {
+      width: 200px; } }
 
 .save-items {
   padding-bottom: 28px; }
@@ -254,6 +348,10 @@ header nav ul {
     color: #000000;
     padding-bottom: 9px;
     padding-top: 19px; }
+    @media screen and (max-width: 376px) {
+      .items h3 {
+        font-size: 27px;
+        line-height: 35px; } }
   .items p {
     font-family: 'Readex Pro';
     font-style: normal;
@@ -263,6 +361,20 @@ header nav ul {
     color: #000000;
     text-align: center;
     padding-bottom: 56px; }
+    @media screen and (max-width: 835px) {
+      .items p {
+        padding-bottom: 10px; } }
+    @media screen and (max-width: 429px) {
+      .items p {
+        padding-left: 10px; } }
+    @media screen and (max-width: 376px) {
+      .items p {
+        font-size: 8px; } }
+
+@media screen and (max-width: 835px) {
+  .price {
+    flex-direction: column;
+    align-items: center; } }
 
 .mac-book {
   max-width: 302px; }
@@ -275,6 +387,9 @@ header nav ul {
     color: #000000;
     padding-top: 33px;
     padding-bottom: 9px; }
+    @media screen and (max-width: 835px) {
+      .mac-book h3 {
+        padding-top: 0; } }
   .mac-book p {
     font-family: 'Inter';
     font-style: normal;
@@ -295,6 +410,9 @@ header nav ul {
   max-width: 302px;
   text-align: center; }
 
+@media screen and (max-width: 835px) {
+  .smart-watch {
+    padding-top: 50px; } }
 .smart-watch h3 {
   font-family: 'Readex Pro';
   font-style: normal;
@@ -322,6 +440,9 @@ header nav ul {
 
 .description {
   max-width: 302px; }
+  @media screen and (max-width: 835px) {
+    .description {
+      padding-bottom: 50px; } }
 
 .mac-book-air h3 {
   font-family: 'Readex Pro';
@@ -332,6 +453,9 @@ header nav ul {
   color: #000000;
   padding-bottom: 9px;
   padding-top: 33px; }
+  @media screen and (max-width: 835px) {
+    .mac-book-air h3 {
+      padding-top: 0; } }
 .mac-book-air p {
   font-family: 'Inter';
   font-style: normal;
@@ -373,6 +497,11 @@ header nav ul {
   line-height: 22px;
   color: #000000; }
 
+@media screen and (max-width: 835px) {
+  .box-product {
+    flex-direction: column;
+    align-items: center; } }
+
 .best-around {
   padding-bottom: 28px; }
 
@@ -388,6 +517,14 @@ header nav ul {
     color: #000000;
     padding-top: 19px;
     padding-bottom: 9px; }
+    @media screen and (max-width: 429px) {
+      .best h3 {
+        font-size: 36px;
+        line-height: 44px; } }
+    @media screen and (max-width: 376px) {
+      .best h3 {
+        font-size: 22px;
+        line-height: 38px; } }
   .best p {
     font-family: 'Readex Pro';
     font-style: normal;
@@ -396,12 +533,21 @@ header nav ul {
     line-height: 17px;
     color: #000000;
     text-align: center; }
+    @media screen and (max-width: 429px) {
+      .best p {
+        padding-left: 32px; } }
 
 .gratest {
   max-width: 413px;
   background: #F8F9FA;
   border-radius: 16px;
   text-align: center; }
+  @media screen and (max-width: 835px) {
+    .gratest {
+      margin-bottom: 30px; } }
+  @media screen and (max-width: 321px) {
+    .gratest {
+      width: 300px; } }
   .gratest p {
     font-family: 'Readex Pro';
     font-style: normal;
@@ -431,7 +577,8 @@ header nav ul {
     border-radius: 200px;
     padding: 14px 63px; }
   .gratest img {
-    padding-top: 30px; }
+    padding-top: 30px;
+    width: 300px; }
 
 .box-ideas {
   margin-top: 48px;
@@ -445,6 +592,14 @@ header nav ul {
     text-align: center;
     color: #000000;
     padding-bottom: 9px; }
+    @media screen and (max-width: 429px) {
+      .box-ideas h3 {
+        font-size: 38px;
+        line-height: 42px; } }
+    @media screen and (max-width: 376px) {
+      .box-ideas h3 {
+        font-size: 24px;
+        line-height: 37px; } }
   .box-ideas p {
     font-family: 'Readex Pro';
     font-style: normal;
@@ -456,6 +611,14 @@ header nav ul {
 
 .img {
   max-width: 620px; }
+  @media screen and (max-width: 429px) {
+    .img img {
+      width: 320px; } }
+
+@media screen and (max-width: 835px) {
+  .box-design {
+    flex-direction: column;
+    align-items: center; } }
 
 .design {
   max-width: 639px; }
@@ -468,12 +631,23 @@ header nav ul {
     line-height: 30px;
     color: #000000;
     padding-left: 23px; }
+    @media screen and (max-width: 429px) {
+      .design p {
+        font-size: 18px;
+        line-height: 19px; } }
+    @media screen and (max-width: 321px) {
+      .design p {
+        font-size: 13px;
+        line-height: 15px; } }
 
 .see-all {
   max-width: 109px;
   margin: auto;
   padding-top: 74px;
   padding-bottom: 24px; }
+  @media screen and (max-width: 376px) {
+    .see-all {
+      padding-top: 25px; } }
   .see-all a {
     font-family: 'Inter';
     font-style: normal;
@@ -501,6 +675,14 @@ header nav ul {
     line-height: 52px;
     text-align: center;
     color: #000000; }
+    @media screen and (max-width: 429px) {
+      .looking h3 {
+        font-size: 35px;
+        line-height: 45px; } }
+    @media screen and (max-width: 376px) {
+      .looking h3 {
+        font-size: 19px;
+        line-height: 30px; } }
 
 .search {
   max-width: 650px;
@@ -508,6 +690,9 @@ header nav ul {
   padding-top: 14px;
   position: relative;
   padding-bottom: 18px; }
+  @media screen and (max-width: 429px) {
+    .search {
+      margin-left: 40px; } }
   .search input {
     background: #F8F9FA;
     border: 1px solid #C5C5C5;
@@ -525,6 +710,18 @@ header nav ul {
       color: #000000; }
     .search input::-webkit-search-cancel-button {
       display: none; }
+    @media screen and (max-width: 429px) {
+      .search input {
+        width: 350px; } }
+    @media screen and (max-width: 391px) {
+      .search input {
+        width: 310px; } }
+    @media screen and (max-width: 376px) {
+      .search input {
+        width: 290px; } }
+    @media screen and (max-width: 321px) {
+      .search input {
+        width: 250px; } }
   .search button {
     border: 0;
     position: absolute;
@@ -599,6 +796,10 @@ header nav ul {
       font-size: 14px;
       line-height: 17px;
       color: #000000; }
+    @media screen and (max-width: 376px) {
+      .email input {
+        width: 190px;
+        margin-left: 17px; } }
   .email button {
     background: #000000;
     border-radius: 0px 200px 200px 0px;
@@ -610,20 +811,35 @@ header nav ul {
     line-height: 17px;
     text-align: center;
     color: #FFFFFF; }
+    @media screen and (max-width: 429px) {
+      .email button {
+        padding: 16px 22px; } }
 
 footer {
   background: #F8F9FA; }
   footer .box-footer {
     padding-bottom: 80px; }
+    @media screen and (max-width: 835px) {
+      footer .box-footer {
+        flex-direction: column; } }
   footer .logo-footer {
     width: 394px;
     padding-top: 43px; }
+    @media screen and (max-width: 835px) {
+      footer .logo-footer {
+        margin: auto; } }
+    @media screen and (max-width: 391px) {
+      footer .logo-footer {
+        width: auto; } }
     footer .logo-footer p {
       padding-top: 18px; }
 
 .products {
   list-style: none;
   padding-top: 45px; }
+  @media screen and (max-width: 835px) {
+    .products {
+      padding-left: 20px; } }
   .products li {
     padding-bottom: 15px;
     width: 197px; }
@@ -648,6 +864,10 @@ footer {
   border-top: solid #DCE5E2;
   padding-top: 52px; }
 
+@media screen and (max-width: 391px) {
+  .made-by {
+    display: block; } }
+
 .made a {
   text-decoration: none;
   font-family: 'Readex Pro';
@@ -656,6 +876,10 @@ footer {
   font-size: 18px;
   line-height: 22px;
   color: #000000; }
+
+@media screen and (max-width: 391px) {
+  .powered {
+    display: block; } }
 
 .azvedo {
   display: flex; }
@@ -693,13 +917,113 @@ footer {
   color: black; }
 
 .owl-dots {
-  position: absolute; }
-  .owl-dots .owl-dot span {
-    background: #000000;
-    width: 197px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 20px; }
+
+.owl-dot span {
+  background: #000000;
+  width: 197px;
+  height: 2px;
+  margin-right: 34px;
+  display: flex; }
+  @media screen and (max-width: 429px) {
+    .owl-dot span {
+      width: 80px;
+      margin-right: 20px; } }
+
+.owl-dot.active {
+  opacity: 0.3; }
+
+.owl-carousel .owl-item img {
+  width: auto; }
+  @media screen and (max-width: 429px) {
+    .owl-carousel .owl-item img {
+      width: 100%; } }
+
+body {
+  font-size: 16px; }
+
+#menu {
+  background: gray;
+  width: 100vw;
+  height: auto;
+  padding: 50px 0;
+  color: #ECF0F1;
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 3px;
+  transition: all 300ms ease-in-out;
+  position: fixed;
+  top: -100vh;
+  left: 0px;
+  z-index: 9; }
+  #menu.active {
+    top: 0; }
+  #menu #logo {
+    font-size: 25px;
+    font-weight: 700; }
+  #menu ul {
+    list-style-type: none;
+    padding: 0; }
+    #menu ul li {
+      margin: 10px 0; }
+
+#toggle {
+  position: relative;
+  width: 40px;
+  height: 36px;
+  left: 20px;
+  top: 35px;
+  transition: all 300ms ease-in-out;
+  z-index: 10;
+  display: none; }
+  @media screen and (max-width: 835px) {
+    #toggle {
+      display: block; } }
+  #toggle input {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer; }
+    #toggle input:checked + span {
+      background: transparent;
+      left: 0; }
+      #toggle input:checked + span:after {
+        transform: rotate(45deg) translate(-1px, -12px);
+        left: -7px;
+        background: #fff; }
+      #toggle input:checked + span:before {
+        transform: rotate(-45deg) translate(-4px, 16px);
+        left: -7px;
+        background: #fff; }
+  #toggle span {
+    position: absolute;
+    width: 100%;
     height: 2px;
-    margin-right: 34px;
-    top: 90%;
-    display: flex; }
+    background: #34495E;
+    margin-top: 10px;
+    transition: all 0.1s;
+    left: 0; }
+    #toggle span:before, #toggle span:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: #34495E;
+      top: -12px;
+      left: 0;
+      transition: all 0.3s; }
+    #toggle span:after {
+      top: 12px; }
 
 /*# sourceMappingURL=style.css.map */
