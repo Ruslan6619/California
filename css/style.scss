@@ -1,3 +1,7 @@
+$font_Readex_Pro:'Readex Pro', sans-serif;
+$font_Inter:'Inter', sans-serif;
+$main_color: #000000;
+
 
 @mixin max-screen($res) {
   @media screen and (max-width: $res) {
@@ -53,13 +57,13 @@ header {
           margin-left: 44px;
         }
         a {
-          font-family: 'Inter';
+          font-family: 'Inter', sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 14px;
           line-height: 17px;
           text-transform: uppercase;
-          color: #000000;
+          color: $main_color;
           text-decoration: none;
 
         }
@@ -125,12 +129,12 @@ header {
 }
 .the-new-phone{
   h1{
-    font-family: 'Readex Pro';
+    font-family: $font_Readex_Pro;
     font-style: normal;
     font-weight: 400;
     font-size: 58px;
     line-height: 70px;
-    color: #000000;
+    color: $main_color;
     padding-top: 145px;
     padding-left: 56px;
     padding-bottom: 19px;
@@ -144,12 +148,12 @@ header {
   }
   p{
 
-    font-family: 'Inter';
+    font-family: $font_Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #000000;
+    color: $main_color;
     padding-left: 56px;
     padding-bottom: 44px;
     @include max-screen(429px){
@@ -161,14 +165,14 @@ header {
   }
   a{
     text-decoration: none;
-    font-family: 'Inter';
+    font-family: $font_Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     text-transform: capitalize;
-    color: #000000;
-    border: 1px solid #000000;
+    color: $main_color;
+    border: 1px solid $main_color;
     border-radius: 200px;
     padding: 14px 53px;
     margin-left: 56px;
@@ -187,13 +191,13 @@ header {
   padding-top: 28px;
   h3{
 
-    font-family: 'Readex Pro';
+    font-family:$font_Readex_Pro;
     font-style: normal;
     font-weight: 400;
     font-size: 42px;
     line-height: 52px;
     text-align: center;
-    color: #000000;
+    color: $main_color;
     padding-bottom: 9px;
     @include max-screen(429px){
       font-size: 25px;
@@ -201,13 +205,13 @@ header {
     }
   }
   p{
-    font-family: 'Readex Pro';
+    font-family:$font_Readex_Pro;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    color: #000000;
+    color: $main_color;
     margin-bottom: 55px;
     @include max-screen(376px){
       font-size: 12px;
@@ -242,23 +246,23 @@ header {
 
 
   p{
-    font-family: 'Inter';
+    font-family:$font_Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 19px;
     text-align: right;
-    color: #000000;
+    color: $main_color;
     padding-right: 42px;
   }
   h3{
-    font-family: 'Readex Pro';
+    font-family: $font_Readex_Pro;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 38px;
     text-align: right;
-    color: #000000;
+    color: $main_color;
     padding-right: 42px
   }
   img{
@@ -286,22 +290,22 @@ header {
     margin-top: 30px;
   }
   p{
-    font-family: 'Inter';
+    font-family:$font_Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 19px;
     text-align: right;
-    color: #000000;
+    color: $main_color;
   }
   h3{
-    font-family: 'Readex Pro';
+    font-family: $font_Readex_Pro;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 38px;
     text-align: right;
-    color: #000000;
+    color:$main_color;
   }
   img{
     @include max-screen(429px){
@@ -355,23 +359,23 @@ header {
     }
   }
   p{
-    font-family: 'Inter';
+    font-family:$font_Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 19px;
     text-align: center;
-    color: #000000;
+    color: $main_color;
     padding-top: 44px;
   }
   h3{
-    font-family: 'Readex Pro';
+    font-family:$font_Readex_Pro;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 38px;
     text-align: center;
-    color: #000000;
+    color: $main_color;
   }
 
 }
@@ -393,23 +397,23 @@ header {
   }
   p{
 
-    font-family: 'Inter';
+    font-family:$font_Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    color: #000000;
+    color: $main_color;
     padding-top: 114px;
   }
   h3{
-    font-family: 'Readex Pro';
+    font-family: $font_Readex_Pro;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 38px;
     text-align: center;
-    color: #000000;
+    color: $main_color;
   }
   img{
     @include max-screen(321px){
@@ -423,13 +427,13 @@ header {
 .items{
   margin-top: 53px;
   h3{
-    font-family: 'Readex Pro';
+    font-family:$font_Readex_Pro;
     font-style: normal;
     font-weight: 400;
     font-size: 42px;
     line-height: 52px;
     text-align: center;
-    color: #000000;
+    color: $main_color;
     padding-bottom: 9px;
     padding-top: 19px;
     @include max-screen(376px){
@@ -438,12 +442,12 @@ header {
     }
   }
   p{
-    font-family: 'Readex Pro';
+    font-family: $font_Readex_Pro;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 17px;
-    color: #000000;
+    color: $main_color;
     text-align: center;
     padding-bottom: 56px;
     @include max-screen(835px){
@@ -468,12 +472,12 @@ header {
 .mac-book{
   max-width: 302px;
   h3{
-    font-family: 'Readex Pro';
+    font-family: $font_Readex_Pro;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
-    color: #000000;
+    color: $main_color;
     padding-top: 33px;
     padding-bottom: 9px;
     @include max-screen(835px){
@@ -481,7 +485,7 @@ header {
     }
   }
   p{
-    font-family: 'Inter';
+    font-family: $font_Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -490,12 +494,12 @@ header {
     padding-bottom: 25px;
   }
   h4{
-    font-family: 'Inter';
+    font-family:$font_Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    color: #000000;
+    color: $main_color;
   }
 }
 .img-product{
@@ -507,17 +511,17 @@ header {
     padding-top: 50px;
   }
   h3{
-    font-family: 'Readex Pro';
+    font-family:$font_Readex_Pro;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
-    color: #000000;
+    color: $main_color;
     padding-top: 33px;
     padding-bottom: 9px;
   }
   p{
-    font-family: 'Inter';
+    font-family: $font_Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -526,12 +530,12 @@ header {
     padding-bottom: 8px;
   }
   h4{
-    font-family: 'Inter';
+    font-family:$font_Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    color: #000000;
+    color: $main_color;
   }
 }
 .description{
@@ -542,12 +546,12 @@ header {
 }
 .mac-book-air{
   h3{
-    font-family: 'Readex Pro';
+    font-family:$font_Readex_Pro;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
-    color: #000000;
+    color: $main_color;
     padding-bottom: 9px;
     padding-top: 33px;
     @include max-screen(835px){
@@ -555,7 +559,7 @@ header {
     }
   }
   p{
-    font-family: 'Inter';
+    font-family:$font_Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -564,29 +568,29 @@ header {
     padding-bottom: 8px;
   }
   h4{
-    font-family: 'Inter';
+    font-family:$font_Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    color: #000000;
+    color:$main_color;
   }
 
 }
 
 .ipad{
   h3{
-    font-family: 'Readex Pro';
+    font-family:$font_Readex_Pro;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
-    color: #000000;
+    color: $main_color;
     padding-top: 33px;
     padding-bottom: 9px;
   }
   p{
-    font-family: 'Inter';
+    font-family:$font_Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -595,12 +599,12 @@ header {
     padding-bottom: 8px;
   }
   h4{
-    font-family: 'Inter';
+    font-family:$font_Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    color: #000000;
+    color: $main_color;
   }
 }
 .box-product{
@@ -615,13 +619,13 @@ header {
 .best{
   margin-bottom: 56px;
   h3{
-    font-family: 'Readex Pro';
+    font-family: $font_Readex_Pro;
     font-style: normal;
     font-weight: 400;
     font-size: 42px;
     line-height: 52px;
     text-align: center;
-    color: #000000;
+    color: $main_color;
     padding-top: 19px;
     padding-bottom: 9px;
     @include max-screen(429px){
@@ -634,12 +638,12 @@ header {
     }
   }
   p{
-    font-family: 'Readex Pro';
+    font-family:$font_Readex_Pro;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 17px;
-    color: #000000;
+    color: $main_color;
     text-align: center;
     @include max-screen(429px){
       padding-left: 32px;
@@ -658,31 +662,31 @@ header {
     width: 300px;
   }
   p{
-    font-family: 'Readex Pro';
+    font-family: $font_Readex_Pro;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 17px;
-    color: #000000;
+    color: $main_color;
     padding-top: 41px;
   }
   h3{
-    font-family: 'Readex Pro';
+    font-family: $font_Readex_Pro;
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
     line-height: 35px;
-    color: #000000;
+    color: $main_color;
     padding-bottom: 44px;
   }
   a{
-    font-family: 'Inter';
+    font-family:$font_Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     text-transform: capitalize;
-    color: #000000;
+    color: $main_color;
     text-decoration: none;
     border: 1px solid #000000;
     border-radius: 200px;
@@ -698,13 +702,13 @@ header {
   margin-top: 48px;
   margin-bottom: 56px;
   h3{
-    font-family: 'Readex Pro';
+    font-family: $font_Readex_Pro;
     font-style: normal;
     font-weight: 400;
     font-size: 42px;
     line-height: 52px;
     text-align: center;
-    color: #000000;
+    color: $main_color;
     padding-bottom: 9px;
     @include max-screen(429px){
       font-size: 38px;
@@ -716,13 +720,13 @@ header {
     }
   }
   p{
-    font-family: 'Readex Pro';
+    font-family: $font_Readex_Pro;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 17px;
     text-align: center;
-    color: #000000;
+    color: $main_color;
   }
 }
 .img{
@@ -744,12 +748,12 @@ header {
   max-width: 639px;
   p{
     padding-bottom: 23px;
-    font-family: 'Inter';
+    font-family: $font_Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 30px;
-    color: #000000;
+    color: $main_color;
     padding-left: 23px;
     @include max-screen(429px){
       font-size: 18px;
@@ -771,13 +775,13 @@ header {
     padding-top: 25px;
   }
   a{
-    font-family: 'Inter';
+    font-family:$font_Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
     text-transform: capitalize;
-    color: #000000;
+    color: $main_color;
     text-decoration: none;
 
   }
@@ -793,13 +797,13 @@ header {
   max-width: 563px;
   margin: auto;
   h3{
-    font-family: 'Readex Pro';
+    font-family: $font_Readex_Pro;
     font-style: normal;
     font-weight: 400;
     font-size: 42px;
     line-height: 52px;
     text-align: center;
-    color: #000000;
+    color: $main_color;
     @include max-screen(429px){
       font-size: 35px;
       line-height: 45px;
@@ -828,12 +832,12 @@ header {
     padding-bottom: 22px;
     padding-left: 67px;
     &::placeholder {
-      font-family: 'Inter';
+      font-family: $font_Inter;
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 17px;
-      color: #000000;
+      color: $main_color;
     }
     &::-webkit-search-cancel-button{
       display: none;
@@ -867,12 +871,12 @@ header {
   justify-content: center;
   padding-bottom: 61px;
   a{
-    font-family: 'Inter';
+    font-family:$font_Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #000000;
+    color: $main_color;
     text-decoration: none;
     background: #FFFFFF;
     border: 1px solid #C5C5C5;
@@ -890,22 +894,22 @@ header {
   text-align: center;
   padding-bottom: 43px;
   h3{
-    font-family: 'Readex Pro';
+    font-family: $font_Readex_Pro;
     font-style: normal;
     font-weight: 400;
     font-size: 42px;
     line-height: 52px;
-    color: #000000;
+    color: $main_color;
     padding-bottom: 9px;
     padding-top: 47px;
   }
   p{
-    font-family: 'Inter';
+    font-family:$font_Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #000000;
+    color: $main_color;
     padding-bottom: 14px;
   }
 }
@@ -924,12 +928,12 @@ header {
     padding-left: 32px;
     width: 280px;
     &::placeholder{
-      font-family: 'Inter';
+      font-family:$font_Inter;
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 17px;
-      color: #000000;
+      color: $main_color;
     }
     @include max-screen(376px){
       width: 190px;
@@ -937,10 +941,10 @@ header {
     }
   }
   button{
-    background: #000000;
-    border-radius: 0px 200px 200px 0px;
+    background: $main_color;
+    border-radius: 0 200px 200px 0;
     padding: 16px 31px;
-    font-family: 'Inter';
+    font-family: $font_Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -986,22 +990,22 @@ footer{
        padding-bottom: 15px;
        width: 197px;
        &:first-of-type a{
-         font-family: 'Readex Pro';
+         font-family: $font_Readex_Pro;
          font-style: normal;
          font-weight: 400;
          font-size: 22px;
          line-height: 28px;
-         color: #000000;
+         color: $main_color;
          padding-bottom: 20px;
        }
         a{
           text-decoration: none;
-          font-family: 'Inter';
+          font-family: $font_Inter;
           font-style: normal;
           font-weight: 400;
           font-size: 17px;
           line-height: 22px;
-          color: #000000;
+          color: $main_color;
 
         }
       }
@@ -1020,12 +1024,12 @@ footer{
 
   a{
     text-decoration: none;
-    font-family: 'Readex Pro';
+    font-family:$font_Readex_Pro;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    color: #000000;
+    color: $main_color;
 
   }
 }
@@ -1039,12 +1043,12 @@ footer{
 
 a{
   text-decoration: none;
-  font-family: 'Inter';
+  font-family:$font_Inter;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: #000000;
+  color: $main_color;
 
 }
 }
@@ -1061,7 +1065,7 @@ a{
   font-weight: 900;
   content: "\f053";
   font-size: 25px;
-  color: black;
+  color: $main_color;
 }
 
 .owl-nav .owl-next{
@@ -1076,7 +1080,7 @@ font-family: "Font Awesome 6 Free";
 font-weight: 900;
 content: "\f054";
   font-size: 25px;
-  color: black;
+  color: $main_color;
 }
 
 
@@ -1087,7 +1091,7 @@ content: "\f054";
   bottom: 20px;
 }
   .owl-dot span{
-    background: #000000;
+    background: $main_color;
     width: 197px;
     height: 2px;
     margin-right: 34px;
@@ -1152,7 +1156,7 @@ body {
   transition: all 300ms ease-in-out;
   position: fixed;
   top: -100vh;
-  left: 0px;
+  left: 0;
   z-index: 9;
   &.active {
     top: 0;

@@ -33,7 +33,7 @@ header nav ul {
     header nav ul li:last-of-type {
       margin-left: 44px; }
     header nav ul li a {
-      font-family: 'Inter';
+      font-family: 'Inter', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
@@ -82,7 +82,7 @@ header nav ul {
       border-radius: 0; } }
 
 .the-new-phone h1 {
-  font-family: 'Readex Pro';
+  font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 58px;
@@ -98,7 +98,7 @@ header nav ul {
       padding-top: 65px;
       padding-left: 0; } }
 .the-new-phone p {
-  font-family: 'Inter';
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -114,7 +114,7 @@ header nav ul {
       padding-top: 20px; } }
 .the-new-phone a {
   text-decoration: none;
-  font-family: 'Inter';
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -137,7 +137,7 @@ header nav ul {
   margin: auto;
   padding-top: 28px; }
   .categories h3 {
-    font-family: 'Readex Pro';
+    font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 42px;
@@ -150,7 +150,7 @@ header nav ul {
         font-size: 25px;
         line-height: 33px; } }
   .categories p {
-    font-family: 'Readex Pro';
+    font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -184,7 +184,7 @@ header nav ul {
       width: 310px;
       margin: auto; } }
   .laptop p {
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -193,7 +193,7 @@ header nav ul {
     color: #000000;
     padding-right: 42px; }
   .laptop h3 {
-    font-family: 'Readex Pro';
+    font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -222,7 +222,7 @@ header nav ul {
       display: block;
       margin-top: 30px; } }
   .watch p {
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -230,7 +230,7 @@ header nav ul {
     text-align: right;
     color: #000000; }
   .watch h3 {
-    font-family: 'Readex Pro';
+    font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -281,7 +281,7 @@ header nav ul {
     .iphone img {
       width: 200px; } }
   .iphone p {
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -290,7 +290,7 @@ header nav ul {
     color: #000000;
     padding-top: 44px; }
   .iphone h3 {
-    font-family: 'Readex Pro';
+    font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -313,7 +313,7 @@ header nav ul {
     .table {
       width: 200px; } }
   .table p {
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -322,7 +322,7 @@ header nav ul {
     color: #000000;
     padding-top: 114px; }
   .table h3 {
-    font-family: 'Readex Pro';
+    font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -339,7 +339,7 @@ header nav ul {
 .items {
   margin-top: 53px; }
   .items h3 {
-    font-family: 'Readex Pro';
+    font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 42px;
@@ -353,7 +353,7 @@ header nav ul {
         font-size: 27px;
         line-height: 35px; } }
   .items p {
-    font-family: 'Readex Pro';
+    font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -379,7 +379,7 @@ header nav ul {
 .mac-book {
   max-width: 302px; }
   .mac-book h3 {
-    font-family: 'Readex Pro';
+    font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -391,7 +391,7 @@ header nav ul {
       .mac-book h3 {
         padding-top: 0; } }
   .mac-book p {
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -399,7 +399,7 @@ header nav ul {
     color: #4B4B4B;
     padding-bottom: 25px; }
   .mac-book h4 {
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -414,7 +414,7 @@ header nav ul {
   .smart-watch {
     padding-top: 50px; } }
 .smart-watch h3 {
-  font-family: 'Readex Pro';
+  font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -423,7 +423,7 @@ header nav ul {
   padding-top: 33px;
   padding-bottom: 9px; }
 .smart-watch p {
-  font-family: 'Inter';
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -431,7 +431,7 @@ header nav ul {
   color: #4B4B4B;
   padding-bottom: 8px; }
 .smart-watch h4 {
-  font-family: 'Inter';
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -445,7 +445,7 @@ header nav ul {
       padding-bottom: 50px; } }
 
 .mac-book-air h3 {
-  font-family: 'Readex Pro';
+  font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -457,7 +457,7 @@ header nav ul {
     .mac-book-air h3 {
       padding-top: 0; } }
 .mac-book-air p {
-  font-family: 'Inter';
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -465,7 +465,7 @@ header nav ul {
   color: #4B4B4B;
   padding-bottom: 8px; }
 .mac-book-air h4 {
-  font-family: 'Inter';
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -473,7 +473,7 @@ header nav ul {
   color: #000000; }
 
 .ipad h3 {
-  font-family: 'Readex Pro';
+  font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -482,7 +482,7 @@ header nav ul {
   padding-top: 33px;
   padding-bottom: 9px; }
 .ipad p {
-  font-family: 'Inter';
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -490,7 +490,7 @@ header nav ul {
   color: #4B4B4B;
   padding-bottom: 8px; }
 .ipad h4 {
-  font-family: 'Inter';
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -508,7 +508,7 @@ header nav ul {
 .best {
   margin-bottom: 56px; }
   .best h3 {
-    font-family: 'Readex Pro';
+    font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 42px;
@@ -526,7 +526,7 @@ header nav ul {
         font-size: 22px;
         line-height: 38px; } }
   .best p {
-    font-family: 'Readex Pro';
+    font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -549,7 +549,7 @@ header nav ul {
     .gratest {
       width: 300px; } }
   .gratest p {
-    font-family: 'Readex Pro';
+    font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -557,7 +557,7 @@ header nav ul {
     color: #000000;
     padding-top: 41px; }
   .gratest h3 {
-    font-family: 'Readex Pro';
+    font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -565,7 +565,7 @@ header nav ul {
     color: #000000;
     padding-bottom: 44px; }
   .gratest a {
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -584,7 +584,7 @@ header nav ul {
   margin-top: 48px;
   margin-bottom: 56px; }
   .box-ideas h3 {
-    font-family: 'Readex Pro';
+    font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 42px;
@@ -601,7 +601,7 @@ header nav ul {
         font-size: 24px;
         line-height: 37px; } }
   .box-ideas p {
-    font-family: 'Readex Pro';
+    font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -624,7 +624,7 @@ header nav ul {
   max-width: 639px; }
   .design p {
     padding-bottom: 23px;
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -649,7 +649,7 @@ header nav ul {
     .see-all {
       padding-top: 25px; } }
   .see-all a {
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -668,7 +668,7 @@ header nav ul {
   max-width: 563px;
   margin: auto; }
   .looking h3 {
-    font-family: 'Readex Pro';
+    font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 42px;
@@ -702,7 +702,7 @@ header nav ul {
     padding-bottom: 22px;
     padding-left: 67px; }
     .search input::placeholder {
-      font-family: 'Inter';
+      font-family: "Inter", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
@@ -737,7 +737,7 @@ header nav ul {
   justify-content: center;
   padding-bottom: 61px; }
   .link-product a {
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -759,7 +759,7 @@ header nav ul {
   text-align: center;
   padding-bottom: 43px; }
   .never-miss h3 {
-    font-family: 'Readex Pro';
+    font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 42px;
@@ -768,7 +768,7 @@ header nav ul {
     padding-bottom: 9px;
     padding-top: 47px; }
   .never-miss p {
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -790,7 +790,7 @@ header nav ul {
     padding-left: 32px;
     width: 280px; }
     .email input::placeholder {
-      font-family: 'Inter';
+      font-family: "Inter", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
@@ -802,9 +802,9 @@ header nav ul {
         margin-left: 17px; } }
   .email button {
     background: #000000;
-    border-radius: 0px 200px 200px 0px;
+    border-radius: 0 200px 200px 0;
     padding: 16px 31px;
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -844,7 +844,7 @@ footer {
     padding-bottom: 15px;
     width: 197px; }
     .products li:first-of-type a {
-      font-family: 'Readex Pro';
+      font-family: "Readex Pro", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 22px;
@@ -853,7 +853,7 @@ footer {
       padding-bottom: 20px; }
     .products li a {
       text-decoration: none;
-      font-family: 'Inter';
+      font-family: "Inter", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 17px;
@@ -870,7 +870,7 @@ footer {
 
 .made a {
   text-decoration: none;
-  font-family: 'Readex Pro';
+  font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -885,7 +885,7 @@ footer {
   display: flex; }
   .azvedo a {
     text-decoration: none;
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -902,7 +902,7 @@ footer {
   font-weight: 900;
   content: "\f053";
   font-size: 25px;
-  color: black; }
+  color: #000000; }
 
 .owl-nav .owl-next {
   position: absolute;
@@ -914,7 +914,7 @@ footer {
   font-weight: 900;
   content: "\f054";
   font-size: 25px;
-  color: black; }
+  color: #000000; }
 
 .owl-dots {
   position: absolute;
@@ -961,7 +961,7 @@ body {
   transition: all 300ms ease-in-out;
   position: fixed;
   top: -100vh;
-  left: 0px;
+  left: 0;
   z-index: 9; }
   #menu.active {
     top: 0; }
