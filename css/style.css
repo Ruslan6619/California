@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0; }
 
+html {
+  scroll-behavior: smooth; }
+
 header {
   padding: 30px 0; }
   @media screen and (max-width: 835px) {
@@ -63,9 +66,6 @@ header nav ul {
   .icon-header li {
     margin-right: 13px; }
 
-.navigation nav ul li img {
-  margin-left: 3px; }
-
 .new-phone {
   padding: 28px 0; }
 
@@ -93,6 +93,22 @@ header nav ul {
   padding-bottom: 19px; }
   @media screen and (max-width: 429px) {
     .the-new-phone h1 {
+      font-size: 35px;
+      line-height: 45px;
+      padding-top: 65px;
+      padding-left: 0; } }
+.the-new-phone h3 {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 70px;
+  color: #000000;
+  padding-top: 145px;
+  padding-left: 56px;
+  padding-bottom: 19px; }
+  @media screen and (max-width: 429px) {
+    .the-new-phone h3 {
       font-size: 35px;
       line-height: 45px;
       padding-top: 65px;
@@ -125,6 +141,8 @@ header nav ul {
   border-radius: 200px;
   padding: 14px 53px;
   margin-left: 56px; }
+  .the-new-phone a:hover {
+    background-color: #F8F9FA; }
   @media screen and (max-width: 429px) {
     .the-new-phone a {
       margin-left: 0; } }
@@ -245,7 +263,6 @@ header nav ul {
   max-width: 174px;
   padding-left: 46px;
   padding-right: 42px;
-  position: relative;
   transition: 0.3s;
   bottom: 0; }
   .watch-style:hover {
@@ -366,7 +383,7 @@ header nav ul {
         padding-bottom: 10px; } }
     @media screen and (max-width: 429px) {
       .items p {
-        padding-left: 10px; } }
+        padding-left: 0; } }
     @media screen and (max-width: 376px) {
       .items p {
         font-size: 8px; } }
@@ -535,13 +552,19 @@ header nav ul {
     text-align: center; }
     @media screen and (max-width: 429px) {
       .best p {
-        padding-left: 32px; } }
+        padding-left: 0; } }
 
 .gratest {
   max-width: 413px;
   background: #F8F9FA;
   border-radius: 16px;
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  transition: 0.5s; }
+  .gratest:hover {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7); }
   @media screen and (max-width: 835px) {
     .gratest {
       margin-bottom: 30px; } }
@@ -576,6 +599,8 @@ header nav ul {
     border: 1px solid #000000;
     border-radius: 200px;
     padding: 14px 63px; }
+    .gratest a:hover {
+      background-color: #DCE5E2; }
   .gratest img {
     padding-top: 30px;
     width: 300px; }
@@ -613,7 +638,8 @@ header nav ul {
   max-width: 620px; }
   @media screen and (max-width: 429px) {
     .img img {
-      width: 320px; } }
+      width: 320px;
+      padding-bottom: 25px; } }
 
 @media screen and (max-width: 835px) {
   .box-design {
@@ -750,6 +776,8 @@ header nav ul {
     padding: 13px 22px;
     margin-right: 7px;
     margin-top: 7px; }
+    .link-product a:hover {
+      background: #DCE5E2; }
 
 .never-miss {
   max-width: 935px;
@@ -758,6 +786,9 @@ header nav ul {
   margin: auto;
   text-align: center;
   padding-bottom: 43px; }
+  @media screen and (max-width: 429px) {
+    .never-miss {
+      border-radius: 0; } }
   .never-miss h3 {
     font-family: "Readex Pro", sans-serif;
     font-style: normal;
@@ -781,6 +812,9 @@ header nav ul {
   display: flex;
   margin: auto;
   padding-top: 14px; }
+  @media screen and (max-width: 429px) {
+    .email {
+      justify-content: center; } }
   .email input {
     background: #DCE5E2;
     border: 1px solid #000000;
@@ -843,7 +877,7 @@ footer {
   .products li {
     padding-bottom: 15px;
     width: 197px; }
-    .products li:first-of-type a {
+    .products li:first-of-type {
       font-family: "Readex Pro", sans-serif;
       font-style: normal;
       font-weight: 400;

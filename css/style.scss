@@ -16,6 +16,10 @@ $main_color: #000000;
   margin: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 header {
   padding: 30px 0;
   @include max-screen(835px){
@@ -99,17 +103,7 @@ header {
   }
 }
 
-.navigation{
-  nav{
-    ul{
-      li{
-        img{
-          margin-left: 3px;
-        }
-      }
-    }
-  }
-}
+
 
 .new-phone{
   padding: 28px 0;
@@ -146,6 +140,25 @@ header {
     }
 
   }
+
+  h3{
+    font-family: $font_Readex_Pro;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 70px;
+    color: $main_color;
+    padding-top: 145px;
+    padding-left: 56px;
+    padding-bottom: 19px;
+    @include max-screen(429px){
+      font-size: 35px;
+      line-height: 45px;
+      padding-top: 65px;
+      padding-left: 0;
+    }
+  }
+
   p{
 
     font-family: $font_Inter;
@@ -176,6 +189,9 @@ header {
     border-radius: 200px;
     padding: 14px 53px;
     margin-left: 56px;
+    &:hover{
+      background-color: #F8F9FA;
+    }
     @include max-screen(429px){
       margin-left: 0;
     }
@@ -318,7 +334,6 @@ header {
   max-width: 174px;
   padding-left: 46px;
   padding-right: 42px;
-  position: relative;
   transition: 0.3s;
   bottom: 0;
   &:hover{
@@ -454,7 +469,7 @@ header {
       padding-bottom: 10px;
     }
     @include max-screen(429px){
-      padding-left: 10px;
+      padding-left: 0;
     }
     @include max-screen(376px){
       font-size: 8px;
@@ -646,7 +661,7 @@ header {
     color: $main_color;
     text-align: center;
     @include max-screen(429px){
-      padding-left: 32px;
+      padding-left: 0;
     }
   }
 }
@@ -655,6 +670,21 @@ header {
   background: #F8F9FA;
   border-radius: 16px;
   text-align: center;
+
+
+  position: relative;
+  transition: 0.5s;
+  //bottom: 0;
+
+  &:hover {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+
+
+
+
   @include max-screen(835px){
     margin-bottom: 30px;
   }
@@ -691,6 +721,9 @@ header {
     border: 1px solid #000000;
     border-radius: 200px;
     padding: 14px 63px;
+    &:hover{
+      background-color: #DCE5E2;;
+    }
 
   }
   img{
@@ -734,6 +767,7 @@ header {
   img{
     @include max-screen(429px){
       width: 320px;
+      padding-bottom: 25px;
     }
   }
 
@@ -884,6 +918,9 @@ header {
     padding: 13px 22px;
     margin-right: 7px;
     margin-top: 7px;
+    &:hover{
+      background: #DCE5E2;
+    }
   }
 }
 .never-miss{
@@ -893,6 +930,9 @@ header {
   margin: auto;
   text-align: center;
   padding-bottom: 43px;
+  @include max-screen(429px){
+    border-radius: 0;
+  }
   h3{
     font-family: $font_Readex_Pro;
     font-style: normal;
@@ -918,6 +958,10 @@ header {
   display: flex;
   margin: auto;
   padding-top: 14px;
+  @include max-screen(429px){
+    justify-content: center;
+
+  }
 
   input{
     background: #DCE5E2;
@@ -989,7 +1033,7 @@ footer{
      li{
        padding-bottom: 15px;
        width: 197px;
-       &:first-of-type a{
+       &:first-of-type {
          font-family: $font_Readex_Pro;
          font-style: normal;
          font-weight: 400;
